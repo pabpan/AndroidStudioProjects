@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Hola_mundo_1</string>
-    <string name="Textview">Primer proyecto</string>
+    <string name="app_name">Mi primer proyecto</string>
+    <string name="Textview">Hola Mundo!!</string>
 </resources>

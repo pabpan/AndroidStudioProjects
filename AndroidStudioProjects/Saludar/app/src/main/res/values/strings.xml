@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SALUDAR</string>
+    <string name="Titulo">Programa para saludar</string>
+    <string name="Nombre">Introduce tu nombre</string>
+    <string name="Boton">¡¡Saludar!!</string>
+    <string name="Resultado">Resultado</string>
+</resources>
