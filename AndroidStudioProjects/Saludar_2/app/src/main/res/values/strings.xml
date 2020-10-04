@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SALUDAR 2</string>
+    <string name="app_name_2">SALUDAR 2ª PANTALLA</string>
+    <string name="Titulo">Mejorando el programa de saludar</string>
+    <string name="Nombre">Introduce tu nombre</string>
+    <string name="Boton">¡¡Saludar!!</string>
+    <string name="Volver">Volver a la pantalla anterior</string>
+</resources>
