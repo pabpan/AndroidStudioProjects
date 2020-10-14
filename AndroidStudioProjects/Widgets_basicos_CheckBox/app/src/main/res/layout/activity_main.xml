@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/CheckBox_Cycling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cycling" />
+    <CheckBox
+        android:id="@+id/CheckBox_Teaching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teachiong" />
+    <CheckBox
+        android:id="@+id/CheckBox_Blogging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blogging" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Button_Hobby"
+        android:text="Get Hobby" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Textview_Hobby"
+        android:text="@string/Operation_Hobby" />
+
+</LinearLayout>
