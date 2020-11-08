@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">10 - Petshow</string>
+    <string name="titulo_visor_activity">VISOR</string>
+    <string name="mostrar_boton_mascota">MOSTRAR MASCOTA</string>
+    <string name="autores">Autores</string>
+    <string name="boton_enviar">ENVIAR OPINION</string>
+    <string name="opinion" />
+</resources>

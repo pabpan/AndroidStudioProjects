@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 String textoOpcion = "";
                 if (group.getCheckedRadioButtonId() == R.id.Button_1)
-                    textoOpcion += "OPCION 1 con ID:" + checkedId;
+                    textoOpcion += "OPCION 1 con ID: " + checkedId;
                 if (group.getCheckedRadioButtonId() == R.id.Button_2)
-                    textoOpcion += "OPCION 2 con ID:" + checkedId;
+                    textoOpcion += "OPCION 2 con ID: " + checkedId;
                 Label_Mensaje.setText(textoOpcion);
             }
         });

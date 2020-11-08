@@ -18,12 +18,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Button_1"
-            android:text="Option 1" />
+            android:text="Opción 1" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Button_2"
-            android:text="Option 2" />
+            android:text="Opción 2" />
     </RadioGroup>
 
 </LinearLayout>
