@@ -17,6 +17,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pablo.suarez.petshow.MainActivity" />
         </activity>
+        //Main_activity
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
