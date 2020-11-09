@@ -15,7 +15,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public final static int OPINION_REQUEST_CODE = 1;
-    public final static String EXTRA_NOMBRE = "pablo.suarez.petshow.MASCOTA";
+    public final static String EXTRA_NOMBRE = "";
     private Button mostrar_mascota;
     private TextView autores;
     private TextView texto_opinion;
