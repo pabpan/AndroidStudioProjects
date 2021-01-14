@@ -16,5 +16,8 @@
     <string name="dividir">/</string>
     <string name="multiplicar">*</string>
     <string name="menos">-</string>
+    <string name="borrar_ultimo">BORRAR</string>
+    <string name="limpiar_pantalla">C</string>
+    <string name="restar">-</string>
 
 </resources>

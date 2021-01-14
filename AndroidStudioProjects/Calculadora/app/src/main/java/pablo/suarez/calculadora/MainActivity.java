@@ -33,11 +33,28 @@ public class MainActivity extends AppCompatActivity {
         Button boton_restar = (Button) findViewById(R.id.restar);
         Button boton_multiplicar = (Button) findViewById(R.id.multiplicar);
         Button boton_dividir = (Button) findViewById(R.id.dividir);
-        // Button boton_borrar = (Button) findViewById(R.id.borrar);
+        Button boton_limpiar_pantalla = (Button) findViewById(R.id.limpiar_pantalla);
         Button boton_coma = (Button) findViewById(R.id.coma);
         Button boton_igual = (Button) findViewById(R.id.igual);
+        Button boton_borrar_ultimo = (Button) findViewById(R.id.borrar_ultimo);
+
 
         TextView Resultado = (TextView) findViewById(R.id.resultado);
+
+        boton_borrar_ultimo.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String aux = Resultado.getText().toString();
+                aux = aux.substring(0, aux.length() - 1);
+                Resultado.setText(aux);
+            }
+        });
+
+        boton_limpiar_pantalla.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Resultado.setText("");
+                contador = 0;
+            }
+        });
 
         boton_cero.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
