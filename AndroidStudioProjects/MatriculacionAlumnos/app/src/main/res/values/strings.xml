@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MatriculacionAlumnos</string>
+    <string name="codigo_asignatura">Código</string>
+    <string name="asignatura">Asignatura</string>
+    <string name="guardar">Guardar</string>
+    <string name="asignaturas">Asignaturas</string>
+    <string name="alumnos">Alumnos</string>
+</resources>
