@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activities.ActivityAsignaturasDelAlumno">
+    tools:context=".Activities.ActivityAlumno">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/fondo">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/RecyclerView_Asignar_Asignatura_Alumno"
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView_listar_Alumnos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="vertical"
             tools:ignore="MissingConstraints"
-            tools:listitem="@layout/item_relacion"/>
+            tools:listitem="@layout/item_alumno" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/boton_asignar_asignatura"
+            android:id="@+id/boton_crear_alumno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"

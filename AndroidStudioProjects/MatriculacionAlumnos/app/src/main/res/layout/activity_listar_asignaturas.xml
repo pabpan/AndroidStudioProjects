@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activities.ActivityAsignaturasDelAlumno">
+    tools:context=".Activities.ActivityAsignatura">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/fondo">
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/RecyclerView_Asignar_Asignatura_Alumno"
+            android:id="@+id/RecyclerView_listar_Asignaturas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:scrollbars="vertical"
-            tools:ignore="MissingConstraints"
-            tools:listitem="@layout/item_relacion"/>
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_asignatura"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/boton_asignar_asignatura"
+            android:id="@+id/boton_crear_asignatura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
+            android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
             android:backgroundTint="@color/fragments"
-            app:layout_anchorGravity="bottom|right|end"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/ic_baseline_anyadir_24"
             tools:ignore="VectorDrawableCompat" />
     </FrameLayout>
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

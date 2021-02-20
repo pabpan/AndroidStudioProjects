@@ -1,4 +1,4 @@
-package pablo.suarez.matriculacionalumnos.activities;
+package pablo.suarez.matriculacionalumnos.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import pablo.suarez.matriculacionalumnos.Entidades.Alumno;
+import pablo.suarez.matriculacionalumnos.Entidades.Asignatura;
 import pablo.suarez.matriculacionalumnos.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btnasig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pantalla_asignaturas = new Intent (MainActivity.this, Asignaturas.class);
+                Intent pantalla_asignaturas = new Intent (MainActivity.this, ActivityAsignatura.class);
                 startActivity(pantalla_asignaturas);
             }
         });
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnalum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pantalla_alumnos = new Intent (MainActivity.this, Alumnos.class);
+                Intent pantalla_alumnos = new Intent (MainActivity.this, ActivityAlumno.class);
                 startActivity(pantalla_alumnos);
             }
         });

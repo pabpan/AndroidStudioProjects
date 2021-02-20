@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="pablo.suarez.matriculacionalumnos">
 
     <application
@@ -9,19 +10,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MatriculacionAlumnos">
-        <activity android:name=".activities.AsignaturasDelAlumno"
-            android:parentActivityName=".activities.Alumnos">
-        </activity>
-        <activity android:name=".activities.Alumnos"
-            android:parentActivityName=".activities.MainActivity">
-        </activity>
-        <activity android:name=".activities.Asignaturas"
-            android:parentActivityName=".activities.MainActivity">
-        </activity>
-        <activity android:name=".activities.MainActivity">
+        <activity
+            android:label="@string/label_Alumnos_App"
+            android:name=".Activities.ActivityAlumno" />
+        <activity
+            android:label="@string/label_Asignaturas_App"
+            android:name=".Activities.ActivityAsignatura" />
+        <activity
+            android:label="@string/asignaturas_del_alumno"
+            android:name=".Activities.ActivityAsignaturasDelAlumno"
+            android:parentActivityName=".Entidades.Alumno" />
+        <activity
+            android:name=".Entidades.Alumno"
+            android:parentActivityName=".Activities.MainActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Entidades.Asignatura"
+            android:parentActivityName=".Activities.MainActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

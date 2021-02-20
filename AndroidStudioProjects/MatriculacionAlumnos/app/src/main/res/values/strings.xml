@@ -1,8 +1,15 @@
 <resources>
-    <string name="app_name">MatriculacionAlumnos</string>
-    <string name="codigo_asignatura">Código</string>
-    <string name="asignatura">Asignatura</string>
-    <string name="guardar">Guardar</string>
-    <string name="asignaturas">Asignaturas</string>
-    <string name="alumnos">Alumnos</string>
+    <string name="app_name">Matriculación de Alumnos</string>
+    <string name="editext_alumno_dni">DNI Alumno</string>
+    <string name="editext_alumno_nombre">Nombre Alumno</string>
+    <string name="editext_alumno_apellidos">Apellidos Alumno</string>
+    <string name="editext_asignatura_codigo">Código Asignatura</string>
+    <string name="editext_asignatura_nombre">Nombre Asignatura</string>
+    <string name="MainActivity_boton_asignaturas">Asignaturas</string>
+    <string name="MainActivity_boton_alumnos">Alumnos</string>
+    <string name="label_item_asignatura_numero_alumnos">Nº de alumnos:</string>
+    <string name="textview_item_asignatura_nombre_asignatura">Nombre de la asignatura</string>
+    <string name="label_Alumnos_App">Alumnos</string>
+    <string name="label_Asignaturas_App">Asignaturas</string>
+    <string name="asignaturas_del_alumno">Asignaturas del alumno</string>
 </resources>

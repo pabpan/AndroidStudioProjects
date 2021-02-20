@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alpha="0.8"
+        android:background="@color/cardview_shadow_start_color"
+        android:padding="16dp"
+        android:paddingTop="1dp">
+
+        <TextView
+            android:id="@+id/textview_item_asignatura_codigo_asignatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:text="C" />
+
+        <TextView
+            android:id="@+id/textview_item_asignatura_nombre_asignatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/boton_editar_asignatura"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toEndOf="@+id/textview_item_asignatura_codigo_asignatura"
+            app:layout_constraintTop_toTopOf="@+id/textview_item_asignatura_codigo_asignatura"
+            tools:text="@string/textview_item_asignatura_nombre_asignatura" />
+
+        <ImageView
+            android:id="@+id/boton_editar_asignatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/boton_borrar_asignatura"
+            app:layout_constraintTop_toTopOf="@+id/textview_item_asignatura_nombre_asignatura"
+            app:srcCompat="@drawable/ic_baseline_edit_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/boton_borrar_asignatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:buttonTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/boton_editar_asignatura"
+            app:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/label_item_asignatura_numero_alumnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"
+            android:text="@string/label_item_asignatura_numero_alumnos"
+            android:textAllCaps="true"
+            android:textAppearance="?textAppearanceCaption"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_item_asignatura_codigo_asignatura"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textview_item_asignatura_numero_alumnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toEndOf="@+id/label_item_asignatura_numero_alumnos"
+            app:layout_constraintTop_toTopOf="@+id/label_item_asignatura_numero_alumnos"
+            tools:text="A" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

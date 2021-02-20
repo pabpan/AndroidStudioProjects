@@ -1,53 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginBottom="8dp">
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="100dp"
+        android:alpha="0.8"
+        android:background="@color/cardview_shadow_start_color"
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/nombre_alumno"
+            android:id="@+id/textview_item_alumno_dni_alumno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            app:layout_constraintBottom_toTopOf="@+id/apellidos_alumno"
+            android:textAppearance="?textAppearanceCaption"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.152"
+            tools:text="DNI Alumno" />
+
+        <TextView
+            android:id="@+id/textview_item_alumno_nombre_alumno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textview_item_alumno_dni_alumno"
+            app:layout_constraintTop_toBottomOf="@+id/textview_item_alumno_dni_alumno"
+            app:layout_constraintVertical_bias="0.131"
             tools:ignore="MissingConstraints"
             tools:text="Nombre del alumno" />
 
         <TextView
-            android:id="@+id/apellidos_alumno"
+            android:id="@+id/textview_item_alumno_apellidos_alumno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:layout_marginBottom="8dp"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            app:layout_constraintBottom_toTopOf="@+id/dni_alumno"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nombre_alumno"
-            tools:text="Apellidos del alumno" />
-
-        <TextView
-            android:id="@+id/dni_alumno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?textAppearanceCaption"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/apellidos_alumno"
-            app:layout_constraintTop_toBottomOf="@+id/apellidos_alumno"
-            app:layout_constraintVertical_bias="1.0"
-            tools:text="DNI Alumno" />
+            app:layout_constraintStart_toStartOf="@+id/textview_item_alumno_nombre_alumno"
+            app:layout_constraintTop_toBottomOf="@+id/textview_item_alumno_nombre_alumno"
+            tools:text="Apellidos del alumno" />
 
         <ImageView
             android:id="@+id/boton_editar_alumno"
@@ -57,7 +56,7 @@
             android:layout_marginRight="12dp"
             app:buttonTint="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/boton_borrar_alumno"
-            app:layout_constraintTop_toTopOf="@+id/nombre_alumno"
+            app:layout_constraintTop_toTopOf="@+id/textview_item_alumno_dni_alumno"
             app:srcCompat="@drawable/ic_baseline_edit_24"
             tools:ignore="VectorDrawableCompat" />
 
@@ -83,4 +82,4 @@
             app:srcCompat="@drawable/ic_baseline_eye_24"
             tools:ignore="VectorDrawableCompat" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</com.google.android.material.card.MaterialCardView>
+</androidx.cardview.widget.CardView>
